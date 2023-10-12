@@ -3,9 +3,8 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.39">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>807</IntrospectionStateNumber>
       <ServerVersion>16.0</ServerVersion>
-      <StartupTime>1696580156</StartupTime>
+      <StartupTime>1697060780</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -800,16 +799,16 @@ false Zulu
     </database>
     <database id="4" parent="1" name="microservices">
       <Current>1</Current>
-      <Grants>11||-9223372036854775807|C|G
+      <Grants>11||10|C|G
 11||-9223372036854775808|U|G
-11||-9223372036854775807|U|G
-2200||-9223372036854775807|C|G
+11||10|U|G
+2200||6171|C|G
 2200||-9223372036854775808|U|G
-2200||-9223372036854775807|U|G
-14643||-9223372036854775807|C|G
+2200||6171|U|G
+14643||10|C|G
 14643||-9223372036854775808|U|G
-14643||-9223372036854775807|U|G</Grants>
-      <IntrospectionStateNumber>808</IntrospectionStateNumber>
+14643||10|U|G</Grants>
+      <IntrospectionStateNumber>826</IntrospectionStateNumber>
       <ObjectId>16568</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -818,50 +817,50 @@ false Zulu
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="6" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_create_subscription">
-      <ObjectId>6304</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_database_owner">
+    <role id="6" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="7" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_monitor">
+    <role id="8" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="11" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="12" parent="1" name="pg_read_all_settings">
+    <role id="10" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_read_all_stats">
+    <role id="11" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="15" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="16" parent="1" name="pg_stat_scan_tables">
+    <role id="12" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="17" parent="1" name="pg_use_reserved_connections">
+    <role id="13" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="18" parent="1" name="pg_use_reserved_connections">
       <ObjectId>4550</ObjectId>
     </role>
-    <role id="18" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="19" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
+    <role id="19" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
     </role>
     <role id="20" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
@@ -4229,10 +4228,120 @@ false Zulu
     <schema id="266" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>808</IntrospectionStateNumber>
+      <IntrospectionStateNumber>826</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <sequence id="267" parent="266" name="student_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>16585</ObjectId>
+      <SequenceIdentity>null+50</SequenceIdentity>
+      <StateNumber>817</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="268" parent="266" name="university_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>16593</ObjectId>
+      <SequenceIdentity>null+50</SequenceIdentity>
+      <StateNumber>821</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="269" parent="266" name="student">
+      <ObjectId>16586</ObjectId>
+      <StateNumber>818</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="266" name="university">
+      <ObjectId>16594</ObjectId>
+      <StateNumber>822</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="271" parent="269" name="id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="272" parent="269" name="university_id">
+      <DataType>integer|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="273" parent="269" name="email">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="274" parent="269" name="firstname">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="275" parent="269" name="lastname">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="276" parent="269" name="student_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16591</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>818</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="277" parent="269" name="student_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16592</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>818</StateNumber>
+      <UnderlyingIndexId>16591</UnderlyingIndexId>
+    </key>
+    <column id="278" parent="270" name="id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>822</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="279" parent="270" name="email">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>822</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="280" parent="270" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>822</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="281" parent="270" name="university_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16599</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>822</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="282" parent="270" name="university_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16600</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>822</StateNumber>
+      <UnderlyingIndexId>16599</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>

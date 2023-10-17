@@ -1,5 +1,7 @@
-package com.soloveva.student;
+package com.soloveva.student.controllers;
 
+import com.soloveva.student.models.Student;
+import com.soloveva.student.services.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

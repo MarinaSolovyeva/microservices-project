@@ -1,5 +1,8 @@
-package com.soloveva.university;
+package com.soloveva.university.controllers;
 
+import com.soloveva.university.client.FullUniversityResponse;
+import com.soloveva.university.models.University;
+import com.soloveva.university.services.UniversityService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

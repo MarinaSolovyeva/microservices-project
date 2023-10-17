@@ -1,5 +1,6 @@
-package com.soloveva.university;
+package com.soloveva.university.repositories;
 
+import com.soloveva.university.models.University;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UniversityRepository extends JpaRepository<University, Integer> {

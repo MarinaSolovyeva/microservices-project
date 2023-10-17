@@ -1,5 +1,6 @@
-package com.soloveva.university;
+package com.soloveva.university.client;
 
+import com.soloveva.university.client.Student;
 import lombok.*;
 
 import java.util.List;

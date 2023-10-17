@@ -1,4 +1,4 @@
-package com.soloveva.university;
+package com.soloveva.university.client;
 
 import lombok.*;
 

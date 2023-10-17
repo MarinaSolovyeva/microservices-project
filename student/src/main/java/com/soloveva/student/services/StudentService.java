@@ -1,5 +1,7 @@
-package com.soloveva.student;
+package com.soloveva.student.services;
 
+import com.soloveva.student.models.Student;
+import com.soloveva.student.repositories.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

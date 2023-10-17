@@ -1,5 +1,6 @@
-package com.soloveva.student;
+package com.soloveva.student.repositories;
 
+import com.soloveva.student.models.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

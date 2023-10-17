@@ -1,4 +1,4 @@
-package com.soloveva.student;
+package com.soloveva.student.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

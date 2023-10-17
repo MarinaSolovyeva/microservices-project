@@ -1,6 +1,9 @@
-package com.soloveva.university;
+package com.soloveva.university.services;
 
+import com.soloveva.university.client.FullUniversityResponse;
+import com.soloveva.university.models.University;
 import com.soloveva.university.client.StudentClient;
+import com.soloveva.university.repositories.UniversityRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
